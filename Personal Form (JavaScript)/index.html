@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="submit-form" action="POST">
+      <form class="submit-form" id="submit-form" action="POST">
         <h3
           class="submit-form-title"
           style="margin-bottom: 20px; text-align: center; font-size: 25px"
@@ -103,16 +103,19 @@
         </select>
 
         <span class="submit-form-input">
-          <input class="submit-form-clear js-clear-inputs" type="reset" />
-          <input class="submit-form-button" type="submit" />
+          <input
+            class="submit-form-clear js-clear-inputs"
+            id="reset"
+            type="reset"
+          />
+          <input class="submit-form-button" id="submit" type="submit" />
         </span>
       </form>
-
-      <table class="table container">
+      <h3 style="color: red; text-align: center; margin-top: 5px">
+        Your Information
+      </h3>
+      <table class="table container" id="table">
         <thead>
-          <h3 style="color: red; text-align: center; margin-top: 5px">
-            Your Information
-          </h3>
           <tr>
             <th scope="col">S.N</th>
             <th scope="col">First Name</th>
@@ -123,36 +126,9 @@
             <th scope="col">Gender</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="table-body">
           <tr>
-            <th>1</th>
-            <td>Ram</td>
-            <td>Parsad</td>
-            <td>Adhikari</td>
-            <td>ramu10@gmail.com</td>
-            <td>30</td>
-            <td>Male</td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Ram</td>
-            <td>Parsad</td>
-            <td>Adhikari</td>
-            <td>ramu10@gmail.com</td>
-            <td>30</td>
-            <td>Male</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Ram</td>
-            <td>Parsad</td>
-            <td>Adhikari</td>
-            <td>ramu10@gmail.com</td>
-            <td>30</td>
-            <td>Male</td>
-          </tr>
-          <tr>
-            <th>4</th>
+            <td>1</td>
             <td>Ram</td>
             <td>Parsad</td>
             <td>Adhikari</td>
